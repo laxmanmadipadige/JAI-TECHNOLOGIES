@@ -1,0 +1,57 @@
+/* Fade-in Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Fully transparent */
+    }
+    to {
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Apply fade-in to the content */
+.content {
+    font-size:  large;
+    font-family: Arial, Helvetica, sans-serif;  
+
+opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease-in forwards; /* Fade-in over 1 second */
+}
+
+/* Buttons Styling */
+.buttons {
+    display: flex; /* Enable Flexbox */
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 10px; /* Add space between buttons */
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1.5s ease-in forwards; /* Fade-in with a slight delay */
+    animation-delay: 0.5s; /* Wait 0.5 seconds before starting */
+}
+
+.buttons .button {
+    padding: 10px 20px; /* Ensure consistent padding */
+    background-color: #0056f7; /* Same background color for both buttons */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underlines */
+    border-radius: 5px; /* Rounded corners */
+    width: 150px; /* Set a fixed width for both buttons */
+    text-align: center; /* Center the text inside the button */
+    border: none; /* Ensure no border */
+    cursor: pointer; /* Pointer cursor for better interactivity */
+    transition: background-color 0.3s ease; /* Add hover effect transition */
+}
+
+/* Hover Effect */
+.buttons .button:hover {
+    background-color: #0044c5; /* Darker shade on hover */
+}
+
+/* Remove unnecessary secondary styling */
+
+
+/* Apply fade-in to the image */
+#img {
+    float: left;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 2s ease-in forwards; /* Fade-in with more delay */
+    animation-delay: 1s; /* Wait 1 second before starting */
+}

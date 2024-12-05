@@ -1,0 +1,279 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Align items across the navbar */
+    align-items: center; /* Align items vertically */
+    padding: 15px 20px; /* Adjust padding as needed */
+    border-bottom: 1px solid #ccc; /* Add bottom border for separation */
+    background-color: white; /* Ensure white background */
+    margin-left:auto;
+}
+
+.black-letter {
+    color: black; /* Black color for the letter J */
+}
+
+
+.nav-links-container{
+    margin-left: auto;
+}
+
+/* Logo Section */
+.logo {
+    
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Stack the logo text vertically */
+    align-items: center; /* Center-align text under the logo */
+    gap: 8px; /* Slightly increased spacing between the main logo and subtext */
+}
+
+.logo h1 {
+    text-decoration: none;
+    margin: 0;
+    font-size: 36px; /* Adjusted for better visibility */
+    font-weight: bold;
+    list-style: none;
+    color: hsla(0, 23%, 5%, 0.513); /* Dark color for the logo text */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo .highlight {
+    text-decoration: none;
+    color: #eceef3; /* Matches the blue color for "AI" */
+    background-color: #2154cc; /* Subtle blue background */
+    padding: 3px 7px; /* Slightly adjusted padding for better spacing */
+    border-radius: 1px; /* More rounded corners for a modern feel */
+    font-weight: bold; /* Make "AI" stand out more */
+}
+
+.logo .subtext {
+    margin: 0;
+    font-size: 14px; /* Slightly larger for readability */
+    text-transform: uppercase;
+    letter-spacing: 1.5px; /* Increased spacing for a more distinct effect */
+    color: #777; /* Subtle gray for subtext */
+    font-weight: 300; /* Lighter font weight for the subtext */
+}
+
+
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    display: none; /* Hidden by default */
+    z-index: 10;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu ul li a {
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+
+
+
+
+/* General Dropdown Menu Styles */
+.services-dropdown-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 600px;
+    z-index: 1000;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Services Section */
+.services-section {
+    flex: 1;
+}
+
+.services-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.services-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services-section ul li {
+    margin-bottom: 8px;
+}
+
+.services-section ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.services-section ul li a:hover {
+    color: #0056b3;
+}
+
+/* Industry Focus Section */
+.industry-focus {
+    flex: 1;
+}
+
+.industry-focus h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.industry-focus ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.industry-focus ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+.industry-focus .view-all-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.industry-focus .view-all-link:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .services-dropdown-menu {
+        flex-direction: column; /* Stack sections vertically */
+        width: 100%; /* Full width on smaller screens */
+        padding: 15px;
+    }
+
+    .services-section,
+    .industry-focus {
+        flex: none; /* Remove equal sizing */
+        width: 100%; /* Take full width of the container */
+    }
+
+    .services-section h3,
+    .industry-focus h3 {
+        font-size: 16px; /* Smaller headings */
+    }
+
+    .services-section ul li a,
+    .industry-focus ul li {
+        font-size: 12px; /* Smaller font sizes */
+    }
+
+    .industry-focus .view-all-link {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services-dropdown-menu {
+        padding: 10px;
+    }
+
+    .services-section h3,
+    .industry-focus h3 {
+        font-size: 14px;
+    }
+
+    .services-section ul li a,
+    .industry-focus ul li {
+        font-size: 11px;
+    }
+
+    .industry-focus .view-all-link {
+        font-size: 11px;
+    }
+}
+
+
+/* Other Links */
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #0056f7;
+}
+
+/* Contact Button */
+.contact-btn {
+    padding: 10px 20px;
+    background-color: #0056f7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background-color: #003bb3;
+}
+
