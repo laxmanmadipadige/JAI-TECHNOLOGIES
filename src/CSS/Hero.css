@@ -45,8 +45,6 @@ opacity: 0; /* Initially hidden */
     background-color: #0044c5; /* Darker shade on hover */
 }
 
-/* Remove unnecessary secondary styling */
-
 
 /* Apply fade-in to the image */
 #img {
