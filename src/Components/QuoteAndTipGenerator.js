@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./QuoteAndTipGenerator.css"; // Importing CSS file for styling
+import "../assets/styles/QuoteAndTipGenerator.css"; // Importing CSS file for styling
 
 // Main Component
 const QuoteAndTipGenerator = () => {

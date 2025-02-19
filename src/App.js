@@ -1,26 +1,26 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './Header';
-import Content from './Content';
+import Header from './Components/Header' //
+import Content from './Components/Content'; //
 import QuoteAndTipGenerator from './Components/QuoteAndTipGenerator';
-import FeaturesSection from './FeaturesSection';
-import Products from './Products';
-import Services from './Services';
-import ComprehensiveIT from './ComprehensiveIT';
-import Footer from './Footer';
-import AIPoweredSDLC from './All Services/AIPoweredSDLC';
-import AIConsulting from './All Services/AIConsulting';
-import AIPoweredDataAnalysis from './All Services/AIPoweredDataAnalysis';
-import Nlp from "./All Services/Nlp";
-import PredictiveAnalysis from './All Services/PredictiveAnalysis';
-import ComputerVisionSolutions from './All Services/ComputerVisionSolutions';
-import AIPoweredAutomation from './All Services/AIPoweredAutomation';
-import PersonalizationServices from './All Services/PersonalizationServices';
-import AIPoweredCustomerSupport from './All Services/AIPoweredCustomerSupport';
+import FeaturesSection from './Components/FeaturesSection';
+import Products from './Components/Products';
+import Services from './Components/Services';
+import ComprehensiveIT from './Components/ComprehensiveIT'; //
+import Footer from './Components/Footer';  //
+import AIPoweredSDLC from './Components/supportservices/AIPoweredSDLC';
+import AIConsulting from './Components/supportservices/AIConsulting';
+import AIPoweredDataAnalysis from './Components/supportservices/AIPoweredDataAnalysis';
+import Nlp from './Components/supportservices/Nlp';
+import PredictiveAnalysis from './Components/supportservices/PredictiveAnalysis';
+import ComputerVisionSolutions from './Components/supportservices/ComputerVisionSolutions';
+import AIPoweredAutomation from './Components/supportservices/AIPoweredAutomation';
+import PersonalizationServices from './Components/supportservices/PersonalizationServices';
+import AIPoweredCustomerSupport from './Components/supportservices/AIPoweredCustomerSupport';
 import AboutUs from './pages/Aboutus'; // Ensure the path to AboutUs component is correct
 import Solutions from './pages/Solutions'
-import ContactUs from './ContactUs';
+import ContactUs from './Components/ContactUs';   //
 
 function App() {
     return (

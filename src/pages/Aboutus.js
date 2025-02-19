@@ -1,12 +1,12 @@
 import React from 'react'
-import './AboutUs.css'
-import ComprehensiveIT from '../ComprehensiveIT';
-import Meeting from './photography-group-marketing-experts-background.jpg'
-import one from "./austin-distel-wD1LRb9OeEo-unsplash.jpg"
-import two from "./desola-lanre-ologun-IgUR1iX0mqM-unsplash.jpg"
-import three from "./images.jpeg"
+import '../assets/styles/AboutUs.css'
+import ComprehensiveIT from '../Components/ComprehensiveIT';
+import Meeting from '../assets/Images/photography-group-marketing-experts-background.jpg'
+import one from "../assets/Images/austin-distel-wD1LRb9OeEo-unsplash.jpg"
+import two from "../assets/Images/desola-lanre-ologun-IgUR1iX0mqM-unsplash.jpg"
+import three from "../assets/Images/images.jpeg"
 
-  const aboutUs = () => {
+  const AboutUs = () => {
     const timelineData = [
       {
         title: "The Beginning",
@@ -114,4 +114,4 @@ import three from "./images.jpeg"
   )
 }
 
-export default aboutUs;
+export default AboutUs;

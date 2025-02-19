@@ -1,8 +1,8 @@
 
 
 import React from "react";
-import "../CSS/Solutions.css" // Ensure the CSS file is updated too
-import office from './photography-group-marketing-experts-background.jpg'
+import "../assets/styles/Solutions.css" // Ensure the CSS file is updated too
+import office from '../assets/Images/photography-group-marketing-experts-background.jpg'
 import { Link } from 'react-router-dom';
 const Solutions = () => {
   return (
